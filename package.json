@@ -1,0 +1,29 @@
+{
+  "name": "dxs-cli",
+  "version": "1.0.1",
+  "description": "cli for dxs",
+  "bin": {
+    "dxs-cli": "bin/dxs-cli.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json",
+    "pub": "rm -rf lib && npm run build && npm version patch && npm publish ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
+    "compressing": "^1.5.1",
+    "glob": "^7.1.6",
+    "inquirer": "^8.0.0",
+    "mkdirp": "^1.0.4",
+    "mz-modules": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "typescript": "^4.2.3"
+  }
+}
