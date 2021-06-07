@@ -4,7 +4,6 @@ import Template from '../template'
 
 export default class React extends Base {
   async exec() {
-    console.log('aaa')
     await this.checkProject()
     const { projectName } = this.options
     const dir = `${this.pwd}/${projectName}`
