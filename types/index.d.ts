@@ -33,5 +33,9 @@ declare const dxsCli: {
      * 创建一个 react 项目的项目
      */
     react(projectName: any): void;
+    /**
+     * 创建一个 react 移动端项目
+     */
+    reactM(projectName: any): void;
 };
 export default dxsCli;

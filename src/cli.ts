@@ -16,6 +16,7 @@ program
     $ dxs-cli vue projectName  创建一个 vue 项目的项目
     $ dxs-cli vue3 projectName  创建一个 vue3 项目的项目
     $ dxs-cli react projectName  创建一个 react 项目的项目
+    $ dxs-cli react-m projectName  创建一个 react 移动端项目
 `)
   })
 
@@ -56,5 +57,11 @@ program
   .description('创建一个 react 项目的项目')
   .usage('<projectName>')
   .action((projectName) => dxsCli.react(projectName))
+
+program
+  .command('react-m <projectName>')
+  .description('创建一个 react 移动端项目')
+  .usage('<projectName>')
+  .action((projectName) => dxsCli.reactM(projectName))
 
 program.parse(process.argv)

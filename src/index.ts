@@ -9,6 +9,7 @@ import Serverless from './exec/serverless'
 import Vue from './exec/vue'
 import Vue3 from './exec/vue3'
 import React from './exec/react'
+import ReactM from './exec/reactM'
 
 const dxsCli = {
   /**
@@ -56,6 +57,13 @@ const dxsCli = {
    */
   react(projectName) {
     new React({ projectName }).exec()
+  },
+
+  /**
+   * 创建一个 react 移动端项目
+   */
+  reactM(projectName) {
+    new ReactM({ projectName }).exec()
   },
 }
 
